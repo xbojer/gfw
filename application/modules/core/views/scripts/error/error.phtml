@@ -1,0 +1,6 @@
+Error <?php echo $this->code; ?>  
+<?php echo $this->message; ?> 
+<?php if ('development' === APPLICATION_ENV): ?>
+	<hr />
+	<?php print_r($this->stack_trace);?>
+<?php endif ?>
