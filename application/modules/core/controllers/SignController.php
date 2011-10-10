@@ -4,7 +4,7 @@ class SignController extends Core_Library_Controller_Action_Abstract {
 		$this->redirect('index', 'index', 'core');
 	}
 	public function upAction() {
-		throw new Exception('Sign up action not yet implemented');
+		#throw new Exception('Sign up action not yet implemented');
 	}
 	public function inAction() {
 		if(!$this->isAjaxRequest) {
