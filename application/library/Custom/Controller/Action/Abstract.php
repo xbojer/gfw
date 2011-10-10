@@ -72,8 +72,7 @@ abstract class Custom_Controller_Action_Abstract extends Zend_Controller_Action
 	{
 		$this->view->new_url = $new_url;
 		$this->render('debug_redirect', null, true);
-		$response = $this->getResponse();
-		$response->sendResponse();
+		$this->getResponse()->sendResponse();
 		exit;
 	}
 }
