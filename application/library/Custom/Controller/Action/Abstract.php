@@ -70,6 +70,8 @@ abstract class Custom_Controller_Action_Abstract extends Zend_Controller_Action
 	}
 	public function debug_redirect($new_url)
 	{
+		$frontController = Zend_Controller_Front::getInstance();
+		$frontController->setParam('disableOutputBuffering', true);
 		$this->view->new_url = $new_url;
 		$this->render('debug_redirect', null, true);
 		ob_flush();
