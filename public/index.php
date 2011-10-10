@@ -17,7 +17,7 @@ set_include_path(implode(PATH_SEPARATOR, array(
 	get_include_path(),
 )));
 
-define('DS', '/'); //TODO: refactor DS to PATH_SEPARATOR
+define('DS', '/'); //TODO: refactor DS to some system define
 
 /** Zend_Application */
 require_once 'Zend/Application.php';
