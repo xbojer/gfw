@@ -1,5 +1,7 @@
 <?php
 abstract class Core_Library_Controller_Action_Abstract extends Custom_Controller_Action_Abstract {
+	public $isAjaxRequest = false;
+
 	public function init() {
 		$this->_initView();
 	}
@@ -16,6 +18,7 @@ abstract class Core_Library_Controller_Action_Abstract extends Custom_Controller
 		//if  its an AJAX request stop here
 		if ($this->_request->isXmlHttpRequest() || isset($_GET['xajax'])) 
 		{
+			$this->isAjaxRequest = true;
 			Zend_Controller_Action_HelperBroker::removeHelper('Layout');
 		}
 

@@ -1,5 +1,8 @@
 <?php
-if(!empty($_GET['debug_env'])) define('APPLICATION_ENV', 'development');
+if(!empty($_GET['debug_env'])) {
+	define('APPLICATION_ENV', 'development');
+	define('DEBUG', true);
+}
 
 // Define path to application directory
 defined('APPLICATION_PATH') || define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
@@ -14,14 +17,11 @@ set_include_path(implode(PATH_SEPARATOR, array(
 	get_include_path(),
 )));
 
-define('DS','/');
+define('DS', PATH_SEPARATOR); //TODO: refactor DS to PATH_SEPARATOR
 
 /** Zend_Application */
 require_once 'Zend/Application.php';
 
 // Create application, bootstrap, and run
-$application = new Zend_Application(
-	APPLICATION_ENV,
-	APPLICATION_PATH . '/configs/application.ini'
-);
+$application = new Zend_Application(APPLICATION_ENV, APPLICATION_PATH.'/configs/application.ini');
 $application->bootstrap()->run();
