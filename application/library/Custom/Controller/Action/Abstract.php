@@ -68,7 +68,7 @@ abstract class Custom_Controller_Action_Abstract extends Zend_Controller_Action
 									);
 		}
 	}
-	public function $this->debug_redirect($new_url)
+	public function debug_redirect($new_url)
 	{
 		$this->view->new_url = $new_url;
 		$this->render('debug_redirect', null, true);
