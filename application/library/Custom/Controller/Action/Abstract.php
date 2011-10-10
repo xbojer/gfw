@@ -29,7 +29,7 @@ abstract class Custom_Controller_Action_Abstract extends Zend_Controller_Action
 		
 		if (strstr($controller, 'http'))
 		{
-			if (DEBUG && (!$this->_request->isXmlHttpRequest() && !isset($_GET['xajax'])))
+			if ((APPLICATION_ENV === 'development') && (!$this->_request->isXmlHttpRequest() && !isset($_GET['xajax'])))
 			{
 				$this->debug_redirect($controller);
 			}
