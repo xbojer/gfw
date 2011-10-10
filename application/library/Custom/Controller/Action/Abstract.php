@@ -39,7 +39,7 @@ abstract class Custom_Controller_Action_Abstract extends Zend_Controller_Action
 			}
 		}
 		
-		if (DEBUG && (!$this->_request->isXmlHttpRequest() && !isset($_GET['xajax'])))
+		if ((APPLICATION_ENV === 'development') && (!$this->_request->isXmlHttpRequest() && !isset($_GET['xajax'])))
 		{
 			$url = 'http://'.$_SERVER['HTTP_HOST'];
 			$url .= $this->view->url(array_merge(array('controller' => $controller, 'action' => $action, 'module' => $module), $params), $route, $reset);
