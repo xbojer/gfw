@@ -11,6 +11,7 @@ class SignController extends Core_Library_Controller_Action_Abstract {
 		if(!$this->isAjaxRequest || $user->isSignIn === true) {
 			$this->redirect('index', 'index', 'core');
 		}
+		//Zend_Registry::get('db_master')->resources->multidb
 		throw new Exception('Sign in action not yet implemented');
 	}
 }
