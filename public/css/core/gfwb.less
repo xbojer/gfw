@@ -17,33 +17,28 @@
     top: 0;
     width: 100%;
     z-index: 990;
-}
 
-#gfwb ul, #gfwb ul li {
-    display: inline-block;
-    height: 100%;
-    padding: 0 5px;
-}
+    ul#gfwb-left {
+        float: left;
+    }
 
-ul#gfwb-left {
-    float: left;
-    height: 100%;
-}
+    ul#gfwb-right {
+        float: right;
+    }
 
-ul#gfwb-right {
-    float: right;
-    height: 100%;
-}
+    ul, ul li {
+        display: inline-block;
+        height: 100%;
+        padding: 0 5px;
+    }
 
-#gfwb ul li {
+    ul li {
+        height: @bar-height - @button-border-top;
+        border-top: @button-border-top solid transparent;
+        &:hover { background: @color-bg-hover; }
+    }
 
-    border-top: @button-border-top solid transparent;
-}
-
-#gfwb ul li.active {
-    border-top-color: @color-border-active;
-}
-
-#gfwb ul li:hover {
-    background: @color-bg-hover;
+    ul li.active {
+        border-top-color: @color-border-active;
+    }
 }
