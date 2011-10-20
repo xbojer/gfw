@@ -42,16 +42,15 @@
             border-top: @button-border-top solid transparent;
             &.active { border-top-color: @color-border-active; }
             &:hover { background: @bar-bg-hover; }
+            &#gfwblhb {
+                display: none;
+                background: url('@{images-path}gfwb_hide-left.png');
+            }
 
             a {
                 font: 13px/27px Arial,sans-serif;
                 color: @font-color;
                 text-decoration: none;
-            }
-
-            #gfwblhb {
-                display: none;
-                background: url('@{images-path}gfwb_hide-left.png');
             }
         }
     }
