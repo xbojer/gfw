@@ -29,13 +29,15 @@
         border-bottom-left-radius: @bar-radius;
     }
 
-    ul, ul li {
+    ul {
         display: inline-block;
+        overflow: hidden;
         height: 100%;
-        padding: 0 5px;
     }
 
     ul li {
+        display: inline-block;
+        padding: 0 5px;
         height: @bar-height - @button-border-top;
         border-top: @button-border-top solid transparent;
         &:hover { background: @bar-bg-hover; }
