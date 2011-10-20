@@ -8,6 +8,13 @@
         <?php echo $this->headScript(); ?>
     </head>
     <body>
+        <script>
+            $(document).ready(function(){
+                $('#gfwbl').mouseenter(function(){
+                    $('gfwblhb').animate('width',$('gfwblhb img').width());
+                });
+            });
+        </script>
         <div id="gfwb">
             <ul id="gfwbl">
                 <li><a href="">Stargate</a></li>
