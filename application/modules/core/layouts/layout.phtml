@@ -18,10 +18,11 @@
                 });
                 
                 $('#gfwblhb').click(function(){
-                    var wi = Number($('#gfwbl').width()) - nutton;
+                    var wi = Number($('#gfwbl').width()) - button;
                     $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){
                             $('#gfwblhb').animate({'width':button,'opacity':1},{'queue': false});
                     },'queue': false});
+                    return false;
                 });
                 
                 $('#gfwblhb.hide').click(function(){
