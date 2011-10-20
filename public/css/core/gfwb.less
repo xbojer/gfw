@@ -1,3 +1,4 @@
+@images-path: '/img/';
 @bar-height: 30px;
 @bar-radius: 10px;
 @bar-bg: #2D2D2D;
@@ -41,6 +42,11 @@
             border-top: @button-border-top solid transparent;
             &.active { border-top-color: @color-border-active; }
             &:hover { background: @bar-bg-hover; }
+
+            #grwblhb {
+                display: hidden;
+                background: url(@{images-path}gfwb_hide-left.png);
+            }
         }
     }
 }
