@@ -12,15 +12,16 @@
             $(function(){
                 var button = Number($('#gfwblhb').attr('iw'));
                 $('#gfwbl').hover(function(){
-                    $('#gfwblhb').animate({'width':button,'opacity':1},{'queue': false});
+                    $('#gfwblhb').show('slide', { direction: "right" });
+                    //$('#gfwblhb').animate({'width':button,'opacity':1},{'queue': false});
                 },function(){
-                    $('#gfwblhb').animate({'width':0,'opacity':0},{'queue': false});
+                    $('#gfwblhb').hide('slide', { direction: "left" });
+                    //$('#gfwblhb').animate({'width':0,'opacity':0},{'queue': false});
                 });
                 
                 $('#gfwblhb').click(function(){
-                    var wi = Number($('#gfwbl').width());
-                    $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){
-                        $('#gfwblhb').show();
+                    var wi = Number($('#gfwbl').width()) - button;
+                    $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){;
                     },'queue': false});
                 });
                 
