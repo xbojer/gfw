@@ -1,14 +1,12 @@
 @bar-height: 30px;
 @button-border-top: 2px;
-@font-color: #ccc;
+@font-color: #000;
 @font-color-active: #fff;
 @color-bg: #2D2D2D;
 @color-bg-hover: #666;
 @color-border-active: #DD4B39;
 
 #gfwb {
-    background-color: @color-bg;
-    border-bottom: 1px solid black;
     color: @font-color;
     font: 13px/27px Arial,sans-serif;
     height: @bar-height;
@@ -20,10 +18,14 @@
 
     ul#gfwb-left {
         float: left;
+        background: @color-bg;
+	border-bottom-right-radius: 5px;
     }
 
     ul#gfwb-right {
         float: right;
+        background: @color-bg;
+        border-bottom-left-radius: 5px;
     }
 
     ul, ul li {
