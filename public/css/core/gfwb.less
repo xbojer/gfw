@@ -1,7 +1,13 @@
+@font-color: #ccc;
+@font-color-active: #fff;
+@color-bg: #2D2D2D;
+@color-bg-hover: #666;
+@color-border-active: #DD4B39;
+
 #gfwb {
-    background-color: #2D2D2D;
+    background-color: @color-bg;
     border-bottom: 1px solid black;
-    color: #cccccc;
+    color: @font-color;
     font: 13px/27px Arial,sans-serif;
     height: 30px;
     opacity: 1;
@@ -26,7 +32,10 @@ ul#gfwb-right {
     height: 100%;
     padding: 0 5px;
 }
-
+#gfwb ul li {
+    border-top: 2px solid transparent;
+}
 #gfwb ul li:hover {
-    background: #666;
+    background: @color-bg-hover;
+    border-top-color: @color-border-active;
 }
