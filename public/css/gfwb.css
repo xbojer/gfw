@@ -1,0 +1,28 @@
+#gfwb {
+    background-color: #2D2D2D;
+    border-bottom: 1px solid black;
+    font-size: 24px;
+    height: 30px;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 990;
+}
+
+#gfwb-left {
+    width: 60%;
+    float: left;
+    height: 100%;
+}
+
+#gfwb-right {
+    width: 40%;
+    float: right;
+    height: 100%;
+}
+
+
+#gfwb ul, #gfwb ul li {
+    display: inline;
+}
