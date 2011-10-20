@@ -1,3 +1,5 @@
+@bar-height: 30px;
+@button-border-top: 2px;
 @font-color: #ccc;
 @font-color-active: #fff;
 @color-bg: #2D2D2D;
@@ -9,12 +11,18 @@
     border-bottom: 1px solid black;
     color: @font-color;
     font: 13px/27px Arial,sans-serif;
-    height: 30px;
+    height: @bar-height;
     opacity: 1;
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 990;
+}
+
+#gfwb ul, #gfwb ul li {
+    display: inline-block;
+    height: @bar-height-@button-border-top;
+    padding: 0 5px;
 }
 
 ul#gfwb-left {
@@ -27,13 +35,8 @@ ul#gfwb-right {
     height: 100%;
 }
 
-#gfwb ul, #gfwb ul li {
-    display: inline-block;
-    height: 100%;
-    padding: 0 5px;
-}
 #gfwb ul li {
-    border-top: 2px solid transparent;
+    border-top: @button-border-top solid transparent;
 }
 
 #gfwb ul li.active {
