@@ -25,7 +25,7 @@
                     return false;
                 });
                 
-                $('#gfwblhb.hide a').click(function(){
+                $('#gfwblhb.hide a').live('click',(function(){
                     console.log('jestem tutaj po clicku');
                     $('#gfwbl').animate({'left': '0px'},{'complete': function(){
                             $('#gfwblhb').removeClass('hide');
