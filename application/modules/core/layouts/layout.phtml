@@ -18,7 +18,7 @@
                 });
                 
                 $('#gfwblhb').click(function(){
-                    var wi = Number($('#gfwbl').width()) - 1;
+                    var wi = Number($('#gfwbl').width()) - nutton;
                     $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){
                             $('#gfwblhb').animate({'width':button,'opacity':1},{'queue': false});
                     },'queue': false});
