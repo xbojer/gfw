@@ -10,8 +10,12 @@
     <body>
         <script>
             $(document).ready(function(){
-                $('#gfwbl').mouseenter(function(){
-                    $('gfwblhb').animate('width',$('gfwblhb img').width());
+                $('#gfwbl').hover(function(){
+                    var width = number($('#gfwblhb img').width());
+                    if(width < 1) { width = '32px'; }
+                    $('#gfwblhb').animate('width',width);
+                },function(){
+                    $('#gfwblhb').animate('width',0);
                 });
             });
         </script>
