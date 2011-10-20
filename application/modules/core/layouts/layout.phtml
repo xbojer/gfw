@@ -11,11 +11,14 @@
         <script>
             $(function(){
                 $('#gfwbl').hover(function(){
-                    var width = Number($('#gfwblhb img').width());
-                    if(width < 1) { width = '32px'; }
-                    $('#gfwblhb').animate({'width':width,'opacity':1});
+                    var width = Number($('#gfwblhb').attr('iw'));
+                    $('#gfwblhb').animate({'width':width,'opacity':1},{'queue': false});
                 },function(){
-                    $('#gfwblhb').animate({'width':0,'opacity':0});
+                    $('#gfwblhb').animate({'width':0,'opacity':0},{'queue': false});
+                });
+                
+                $('#gfwblhb').click(function(){
+                    $('#gfwbl').hide("slide", { direction: "left" }, 1000);
                 });
             });
         </script>
