@@ -30,7 +30,7 @@ abstract class Core_Library_Controller_Action_Abstract extends Custom_Controller
         $this->view->headLink(array('rel' => 'stylesheet/less','href' => '/css/core/style.less', 'type' => 'text/css'),'APPEND');
         $this->view->headLink(array('rel' => 'stylesheet/less','href' => '/css/core/gfwb.less', 'type' => 'text/css'),'APPEND');
         
-        //$this->view->headScript()->prependFile('/js/jquery-1.6.4.min.js');
+        $this->view->headScript()->prependFile('/js/jquery-1.6.4.min.js');
         $this->view->headScript()->appendFile('/js/less-1.1.4.js');
         //Sets the base url to the javascripts of the application
         $script[] = 'var base_url = "' . $this->view->baseUrl() . '";';
