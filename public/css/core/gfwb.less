@@ -1,9 +1,10 @@
 @bar-height: 30px;
+@bar-radius: 10px;
+@bar-bg: #2D2D2D;
+@bar-bg-hover: #666;
 @button-border-top: 2px;
-@font-color: #000;
+@font-color: #ccc;
 @font-color-active: #fff;
-@color-bg: #2D2D2D;
-@color-bg-hover: #666;
 @color-border-active: #DD4B39;
 
 #gfwb {
@@ -18,14 +19,14 @@
 
     ul#gfwb-left {
         float: left;
-        background: @color-bg;
-	border-bottom-right-radius: 5px;
+        background: @bar-bg;
+	border-bottom-right-radius: @bar-radius;
     }
 
     ul#gfwb-right {
         float: right;
-        background: @color-bg;
-        border-bottom-left-radius: 5px;
+        background: @bar-bg;
+        border-bottom-left-radius: @bar-radius;
     }
 
     ul, ul li {
@@ -37,7 +38,7 @@
     ul li {
         height: @bar-height - @button-border-top;
         border-top: @button-border-top solid transparent;
-        &:hover { background: @color-bg-hover; }
+        &:hover { background: @bar-bg-hover; }
     }
 
     ul li.active {
