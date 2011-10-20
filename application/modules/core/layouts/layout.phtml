@@ -17,7 +17,7 @@
                     $('#gfwblhb').animate({'width':0,'opacity':0},{'queue': false});
                 });
                 
-                $('#gfwblhb').click(function(){
+                $('#gfwblhb a').click(function(){
                     var wi = Number($('#gfwbl').width()) - ((2 * button) + Number($('#gfwbl li:eq('+($('#gfwbl li').length-2)+')').width()));
                     $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){
                             $('#gfwblhb').addClass('hide');
@@ -25,7 +25,7 @@
                     return false;
                 });
                 
-                $('#gfwblhb.hide').click(function(){
+                $('#gfwblhb.hide a').click(function(){
                     console.log('jestem tutaj po clicku');
                     $('#gfwbl').animate({'left': '0px'},{'complete': function(){
                             $('#gfwblhb').removeClass('hide');
