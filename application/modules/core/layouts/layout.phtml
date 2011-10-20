@@ -19,16 +19,19 @@
                 
                 $('#gfwblhb a').click(function(){
                     var wi = 0;
-                    var doClass = null;
+                    var doClass = 0;
                     if($(this).parent().is('.hide')) {
-                        doClass = removeClass('hide');
+                        doClass = 1;
                     } else {
                         wi = Number($('#gfwbl').width()) - ((2 * button) + Number($('#gfwbl li:eq('+($('#gfwbl li').length-2)+')').width()));
-                        doClass = addClass('hide');
                     }
                     
                     $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){
-                            $('#gfwblhb').eval(doClass);
+                            if(doClass == 1) {
+                                $('#gfwblhb').removeClass('hide');
+                            } else {
+                                $('#gfwblhb').addClass('hide');
+                            }
                     },'queue': false});
                     return false;
                 });
