@@ -1,8 +1,7 @@
 RewriteEngine On
-RewriteBase /
 RewriteCond %{REQUEST_FILENAME} -s [OR]
 RewriteCond %{REQUEST_FILENAME} -l [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule !\.(js|css|ico|gif|jpg|png)$ index.php
-RewriteRule ^.*$ - [NC,L]
-RewriteRule ^.*$ index.php [NC,L]
+RewriteBase /
+
