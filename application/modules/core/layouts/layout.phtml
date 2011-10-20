@@ -11,7 +11,7 @@
         <script>
             $(document).ready(function(){
                 $('#gfwbl').hover(function(){
-                    var width = number($('#gfwblhb img').width());
+                    var width = Number($('#gfwblhb img').width());
                     if(width < 1) { width = '32px'; }
                     $('#gfwblhb').animate('width',width);
                 },function(){
