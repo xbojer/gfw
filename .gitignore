@@ -1,3 +1,5 @@
 library/Zend/
+# netbeans
+/nbproject/
 # SublimeText project files
 /*.sublime-project
