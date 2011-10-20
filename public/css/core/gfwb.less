@@ -33,17 +33,14 @@
         display: inline-block;
         overflow: hidden;
         height: 100%;
-    }
 
-    ul li {
-        display: inline-block;
-        padding: 0 5px;
-        height: @bar-height - @button-border-top;
-        border-top: @button-border-top solid transparent;
-        &:hover { background: @bar-bg-hover; }
-    }
-
-    ul li.active {
-        border-top-color: @color-border-active;
+        li {
+            display: inline-block;
+            padding: 0 5px;
+            height: @bar-height - @button-border-top;
+            border-top: @button-border-top solid transparent;
+            &.active { border-top-color: @color-border-active; }
+            &:hover { background: @bar-bg-hover; }
+        }
     }
 }
