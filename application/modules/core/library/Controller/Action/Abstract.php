@@ -27,8 +27,8 @@ abstract class Core_Library_Controller_Action_Abstract extends Custom_Controller
         $this->view->messages = $this->_helper->FlashMessenger->getMessages();
 
         $this->view->headLink()->prependStylesheet('/css/reset.css');
-        $this->view->headLink()->appendStylesheet('/css/style.css');
-        $this->view->headLink()->appendStylesheet('/css/gfwb.css');
+        $this->view->headLink()->appendStylesheet('/css/style.less');
+        $this->view->headLink()->appendStylesheet('/css/gfwb.less');
         
         //Sets the base url to the javascripts of the application
         $script[] = 'var base_url = "' . $this->view->baseUrl() . '";';
