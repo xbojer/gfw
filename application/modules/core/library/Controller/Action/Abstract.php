@@ -26,7 +26,7 @@ abstract class Core_Library_Controller_Action_Abstract extends Custom_Controller
         //Sets the view variable $messages to contain the FlashMessenger array of messages
         $this->view->messages = $this->_helper->FlashMessenger->getMessages();
 
-        $this->view->headLink()->appendStylesheet('/css/gfwb.less');
+        $this->view->headLink()->appendStylesheet('/css/gfwb.css');
         
         //Sets the base url to the javascripts of the application
         $script[] = 'var base_url = "' . $this->view->baseUrl() . '";';
