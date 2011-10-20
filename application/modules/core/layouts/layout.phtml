@@ -10,12 +10,22 @@
     <body>
         <div id="gfwb">
             <ul id="gfwb-left">
-                <li>Sign in</li>
-                <li>Sign up</li>
+                <li>Stargate</li>
+                <li>Stargate</li>
+                <li>Stargate</li>
+                <li>Stargate</li>
+                <li>Stargate</li>                
+                <li>Progamela</li>
             </ul>
             <ul id="gfwb-right">
-                <li>Sign in</li>
-                <li>Sign up</li>
+                <?php if ($this->isLogin() == true): ?>
+                    <li><?php echo $this->user->user_personal ?></li>
+                    <li><?php echo $this->user->thumb(20,20) ?></li>
+                    <li>Logout</li>
+                <?php else: ?>
+                    <li>Sign in</li>
+                    <li>Sign up</li>
+                <?php endif; ?>
             </ul>
         </div>
         <div id="page">
