@@ -11,7 +11,7 @@
     border-bottom: 1px solid black;
     color: @font-color;
     font: 13px/27px Arial,sans-serif;
-    height: @bar-height;
+    height: @bar-height;-
     opacity: 1;
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@
 
 #gfwb ul, #gfwb ul li {
     display: inline-block;
-    height: @bar-height-@button-border-top;
+    height: 100%;
     padding: 0 5px;
 }
 
@@ -36,6 +36,7 @@ ul#gfwb-right {
 }
 
 #gfwb ul li {
+    height: @bar-height - @button-border-top;
     border-top: @button-border-top solid transparent;
 }
 
