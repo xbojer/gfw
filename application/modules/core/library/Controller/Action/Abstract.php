@@ -29,6 +29,8 @@ abstract class Core_Library_Controller_Action_Abstract extends Custom_Controller
 		$script[] = 'var base_url = "'.$this->view->baseUrl().'";';
 		$script[] = 'var img_url = "/img/";';
 		$this->view->headScript()->prependScript(implode("\n",$script), $type = 'text/javascript', $attrs = array());
+                $this->view->headStyle()->prependStyle('css/gfwb.less');
+               
 	}
 
 	protected function _initView() {
