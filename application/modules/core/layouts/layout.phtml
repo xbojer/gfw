@@ -20,13 +20,15 @@
                 $('#gfwblhb').click(function(){
                     var wi = Number($('#gfwbl').width()) - ((2 * button) + Number($('#gfwbl li:eq('+($('#gfwbl li').length-2)+')').width()));
                     $('#gfwbl').animate({'left': '-'+wi+'px'},{'complete': function(){
-                            $('#gfwblhb').animate({'width':button,'opacity':1},{'queue': false}).addClass('hide');
+                            $('#gfwblhb').addClass('hide');
                     },'queue': false});
                     return false;
                 });
                 
                 $('#gfwblhb.hide').click(function(){
-                    $('#gfwbl').show("slide", { direction: "right" }, 2000);
+                    $('#gfwbl').animate({'left': '0px'},{'complete': function(){
+                            $('#gfwblhb').removeClass('hide');
+                    },'queue': false});
                     return false;
                 });
             });
