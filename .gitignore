@@ -5,3 +5,6 @@ library/Zend/
 /sf/nbproject/
 # SublimeText project files
 /*.sublime-project
+
+/app/cache/
+/app/logs/dev.log
