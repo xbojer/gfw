@@ -7,4 +7,4 @@ library/Zend/
 /*.sublime-project
 
 /app/cache/
-/app/logs/dev.log
+/app/logs/
