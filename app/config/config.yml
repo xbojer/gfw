@@ -59,9 +59,3 @@ swiftmailer:
 jms_security_extra:
     secure_controllers:  true
     secure_all_services: false
-    
-web_profiler_extra:
-    routing:    true
-    container:  true
-    assetic:    true
-    twig:       true
