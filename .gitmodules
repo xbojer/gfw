@@ -1,0 +1,3 @@
+[submodule "src/AntiMattr/GoogleBundle"]
+	path = src/AntiMattr/GoogleBundle
+	url = git@github.com:antimattr/GoogleBundle.git
