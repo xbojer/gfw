@@ -8,9 +8,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
     
-    public function indexAction($name)
+    public function indexAction($name = 'Test Bojera')
     {
-        if(empty($name)) $name = 'Bojer test :P';
         return $this->render('MainBundle:Default:index.html.twig', array('name' => $name));
     }
 }
