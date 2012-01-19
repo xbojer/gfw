@@ -1,6 +1,6 @@
 <?php
 
-namespace GFW\Bundle\GFWBundle\Tests\Controller;
+namespace GFW\MainBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

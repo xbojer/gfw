@@ -1,6 +1,6 @@
 <?php
 
-namespace GFW\Bundle\GFWBundle\Controller;
+namespace GFW\MainBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

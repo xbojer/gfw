@@ -1,6 +1,6 @@
 <?php
 
-namespace GFW\Bundle\GFWBundle\DependencyInjection;
+namespace GFW\MainBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

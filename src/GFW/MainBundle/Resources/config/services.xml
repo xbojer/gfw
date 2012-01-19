@@ -6,7 +6,7 @@
 
     <!--
     <parameters>
-        <parameter key="main.example.class">GFW\Bundle\GFWBundle\Example</parameter>
+        <parameter key="main.example.class">GFW\MainBundle\Example</parameter>
     </parameters>
 
     <services>

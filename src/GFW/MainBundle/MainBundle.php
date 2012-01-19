@@ -1,6 +1,6 @@
 <?php
 
-namespace GFW\Bundle\GFWBundle;
+namespace GFW\MainBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

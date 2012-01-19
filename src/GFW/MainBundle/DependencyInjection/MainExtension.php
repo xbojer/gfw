@@ -1,6 +1,6 @@
 <?php
 
-namespace GFW\Bundle\GFWBundle\DependencyInjection;
+namespace GFW\MainBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
